@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Bootstrap4.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <main class="d-flex align-items-center justify-content-center w-100 bg-primary-blue" style="height: 100vh;">
+
+        <form class="px-4 pt-3 bg-light rounded text-dark" style="width: 350px;">
+            <h4 class="mb-4 text-center text-primary-blue">Create An Account</h4>
+
+            <div class="form-group">
+                <input type="text" class="form-control mt-2" id="firstname" placeholder="Firstname">
+                <input type="text" class="form-control mt-3" id="lastname" placeholder="Lastname">
+                <input type="email" class="form-control mt-3" id="email" placeholder="Email">
+                <input type="tel" class="form-control mt-3" id="tel" placeholder="Phone Number">
+                <input type="password" class="form-control mt-3" id="password" placeholder="Password">
+                <input type="password" class="form-control mt-3" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+
+            <h6>Gender</h6>
+            <div class="form-group border p-2 rounded bg-white">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="male" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="male">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="female" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="female">Female</label>
+                </div>
+            </div>
+
+            <h6>Register As</h6>
+            <div class="form-group border p-2 rounded bg-white">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Mentor</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline2" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Mentee</label>
+                </div>
+            </div>
+                
+            <div class="mt-4 text-center">
+                <button class="btn btn-primary-blue btn-block mb-3">Register</button>
+                <p class="text-center">Already have an account? <a href="login.html" class="pr-4">Login</a></p>
+            </div>
+        </form>
+        
+    </main>
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/Popper.min.js"></script>
+    <script src="js/Bootstrap4.min.js"></script>
+</body>
+</html>

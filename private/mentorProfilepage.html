@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/Bootstrap4.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mentor Profile Page</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-light d-flex align-items-center justify-content-center insideNavbar sticky-top px-2 px-sm-3">
+        <a class="navbar-brand text-light mr-auto" href="#">Nkuzi</a>
+
+        <ul class="d-inline-block list-unstyled text-light mb-0 mx-auto">
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0" 
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="Home">
+                <img src="../images/home.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="News Feeds">
+                <img src="../images/news-feeds.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
+            data-toggle="tooltip" data-placement="bottom" title="Groups">
+                <img src="../images/groups.svg" width="18px" />
+            </a>
+        </ul>
+        
+        <div class="dropdown d-inline-block ml-auto">
+            <a class="nav-item nav-link d-inline-block btn btn-light btn-sm bg-primary-blue border-0 px-0" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <sub  data-toggle="tooltip" data-placement="bottom" title="Notifications"><img src="../images/notifications.svg" width="16px"/></sub>
+                <sup class="badge bg-orange" style="font-size: .6rem; position: relative; right: 11px; top: -7px;">4</sup>
+            </a>
+        
+            <div class="dropdown-menu dropdown-menu-right notifications py-0 user-thumb border-0" aria-labelledby="dropdownMenuLink" style="width: 290px; height: 90vh;">
+                <header class="card-header bg-transparent border-0">
+                    <h4 class="m-0 text-secondary">Notifications</h4>
+                </header>
+                
+
+                <div>
+                    <a href="./mentorshipRequests.html" class="row no-gutters text-decoration-none">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                NO
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1  text-dark">
+                                <h6 class="card-title mb-1">Nathan Omomowo</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">1 day ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a href="./mentorshipRequests.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                BA
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Bobola Ajala</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">3 days ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a  href="./mentorshipRequests.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                HK
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Harry kingsley</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">5 days ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a href="./appointments.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                SI
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Shadrach Idowu</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Set An Appointment</p>
+                                <p class="card-text"><small class="text-primary">1 week ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="dropdown d-inline-block ml-lg-2">
+            <a class="nav-item nav-link d-inline-block btn btn-light bg-primary-blue border-0 p-1" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <span style="width:23px; height:23px; font-size: .5rem;"  data-toggle="tooltip" data-placement="bottom" title="Profile"
+                    class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                    DN
+                </span>
+            </a>
+        
+            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink" style="width: 290px;">
+                    <div class="card border-0">
+                        <div class="row no-gutters border-bottom pb-2">
+                            <div class="col-4">
+                                <div class="card-header py-2 h-100 bg-white border-0 text-center d-flex flex-column align-items-center justify-content-center">
+                                    <span style="width:50px; height:50px; font-size: 1.5rem;"
+                                        class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                        DN
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body d-flex flex-column align-items-center1 justify-content-center py-2 px-0 h-100 bg-white border-0 text-left">
+                                    <h6 class="card-title mb-0">Daniel Nwokocha </h6>
+                                    <a class="small text-primary">123 Mentees</a>
+
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-footer bg-white border-0 py-0">
+                                    <a href="./mentorProfilepage.html" class="btn btn-block btn-sm btn-primary-blue text-white font-weight-bold">View Profile</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <ul class="list-unstyled card-body bg-light px-0 mb-0">
+                            <li>
+                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                    <img src="../images/manage-account.svg" class="mr-2" width="17px"/>Manage Account
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
+                                    <img src="../images/help.svg" class="mr-2" width="17px"/>Help
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../login.html" class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                    <img src="../images/log-out.svg" class="mr-2" width="17px"/>Logout
+                                </a>
+                            </li>             
+                        </ul>
+                        
+                    </div>
+
+
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="container-fluid pt-md-4" style="z-index: 1;">
+        <div class="row">
+            <aside class="col-12 col-md-4 col-lg-3 px-0 h-100 mb-3" id="sidebar">
+                <div class="card bg-primary-blue text-light border-0 rounded-0 ml-md-auto">
+                    <div class="card-header text-center py-4">
+                        <span style="width:90px; height:90px; font-size: 2.2rem;" 
+                            class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                            DN
+                        </span>
+                        <h6 class="card-title text-center mb-1">Daniel Nwokocha</h6>
+                        <p class="card-text text-center" style="font-size: .9rem;">gurudanito001@gmail.com</p>
+                    </div>
+
+
+                    <ul class="d-none d-md-block list-unstyled card-body bg-light px-0 mb-0">
+                        <li>
+                            <a  href="./mentees.html" 
+                            class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/mentees.svg" class="mr-2" width="17px"/>Mentees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./mentorshipRequests.html" class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
+                                <img src="../images/requests.svg" class="mr-2" width="17px"/>Mentorship Requests
+                                <span class="badge bg-orange ml-5">5</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./appointments.html" class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/appointments.svg" class="mr-2" width="17px"/>Appointments
+                                <span class="badge bg-orange ml-auto">4</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/settings.svg" class="mr-2" width="17px"/>Account Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/update-profile.svg" class="mr-2" width="17px"/>Update Profile
+                            </a>
+                        </li>   
+                        <li>
+                            <a class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/code-of-conduct.svg" class="mr-2" width="17px"/>Code of Conduct
+                            </a>
+                        </li>                  
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="col-12 col-md-8 mx-auto py-0">
+                <div class="card mb-3 border-0  mx-auto mx-md-0">
+                    <header class="card-header mb-2 profile-bg px-2 px-sm-3">
+                        
+                        <h4 class="d-inline-block card-title mb-0" style="position: relative; top: 87px;">
+                            <span style="width:120px; height:120px; font-size: 3rem;" 
+                            class="d-inline-flex align-items-center justify-content-center font-weight-light bg-light text-primary-blue rounded-circle profile-text mb-1 user-thumb">DN
+                            </span><br>
+                            Daniel Nwokocha<sup class="badge badge-success font-weight-normal ml-2" style="font-size: .8rem;">Verified</sup>
+                            
+                        </h4>
+                        
+                        
+                    </header>
+                    <div class="card-body row pt-5" style="position: relative; top: 10px;">
+                        <div class="col-md-8 px-2 px-sm-3">
+                            
+                            <h5 class="card-title font-weight-light mb-2">Front End Developer at iDevWorks Technologies Ltd </h5>
+                            <span>Ikeja . Lagos . Nigeria</span>
+                            <p class="card-text mb-1">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            
+                                <span href="#" class="text-info ml-2">123 Mentees .</span>
+                                <a href="#" class="text-info ml-2"> 5 Courses</a>
+                                
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row mb-2">
+                                <div class="col-auto bg-light p-1 d-flex align-items-center">
+                                     <img src="../images/company.svg" height="18px"/>
+                                </div>
+                                 <div class="col d-flex align-items-center">
+                                     <p class="mb-0">iDevWorks Technologies LTD </p>
+                                 </div>
+                             </div>
+
+                            <div class="row">
+                                <div class="col-auto bg-light p-1 d-flex align-items-center">
+                                    <img src="../images/museum.svg" height="18px" />
+                                </div>
+                                <div class="col d-flex align-items-center">
+                                    <p class="mb-0">University Of Lagos (BSC) </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                         
+                    </div>
+                </div>
+               
+                <div class="card border-0 mb-3">
+                    <header class="card-header bg-white clearfix px-2 px-sm-3">
+                        <h5 class="m-0 d-inline-block">Personal Information</h5>
+                    </header>
+                    <div class="card-body clearfix px-2 px-sm-3">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#personalInfo">
+                            Edit
+                        </button>
+                        <h6 class="font-weight-normal card-text d-flex align-items-center">
+                            <img class="mr-2" src="../images/person.svg" width="17px"/>Daniel Nwokocha
+                        </h6>
+                        <h6 class="font-weight-normal card-text d-flex align-items-center">
+                            <img class="mr-2" src="../images/mail.svg" width="17px"/>gurudanito001@gmail.com
+                        </h6>
+                        <h6 class="font-weight-normal card-text d-flex align-items-center">
+                            <img class="mr-2" src="../images/smartphone.svg" width="17px"/>+234-8140715723
+                        </h6>
+                        <h6 class="font-weight-normal card-text d-flex align-items-center"><img class="mr-2" src="../images/person.svg" width="17px"/>Male
+                        </h6>
+                        <h6 class="font-weight-normal card-text d-flex align-items-center"><img class="mr-2" src="../images/browser.svg" width="17px"/>16 Balogun Street Alausa, Ikeja, Lagos Nigeria
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="card border-0 mb-3">
+                    <header class="card-header bg-white px-2 px-sm-3">
+                        <h5 class="m-0 d-inline-block">Fields of Expertise</h5>
+                        <button class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#fieldOfExpertise" title="Add Field of Expertise">
+                             +
+                        </button>
+                    </header>
+                    <div class="card-body clearfix px-3">
+                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#fieldOfExpertise">
+                            Edit
+                        </button> -->
+                        <div class="row">
+                            <li class="card col-sm-auto d-inline-block p-2 text-center mb-1">
+                                <h6 class="mb-1">Front End Development</h6>
+                                <span>4 Years</span><span class="text-secondary"> Till date</span>
+                                <a class="btn btn-link btn-sm py-0 ml-auto ml-sm-0" data-toggle="modal" data-target="#fieldOfExpertise">
+                                    <img src="../images/pen.svg" width="15px" title="Edit"/>
+                                </a>
+                                
+                            </li>
+                            <li class="card col-sm-auto d-inline-block p-2 text-center mb-1">
+                                <h6 class="mb-1">Mobile Development</h6>
+                                <span>2 Years</span>
+                                <a class="btn btn-link btn-sm py-0" data-toggle="modal" data-target="#fieldOfExpertise">
+                                    <img src="../images/pen.svg" width="15px" title="Edit"/>
+                                </a>
+                            </li>
+                            <li class="card col-sm-auto d-inline-block p-2 text-center mb-1">
+                                <h6 class="mb-1">Web Development</h6>
+                                <span>3 Years</span><span class="text-secondary"> Till date</span>
+                                <a class="btn btn-link btn-sm py-0" data-toggle="modal" data-target="#fieldOfExpertise">
+                                    <img src="../images/pen.svg" width="15px" title="Edit"/>
+                                </a>
+                            </li>
+                            <li class="card col-sm-auto d-inline-block p-2 text-center mb-1">
+                                <h6 class="mb-1">Graphic Design</h6>
+                                <span>6 Years</span>
+                                <a class="btn btn-link btn-sm py-0" data-toggle="modal" data-target="#fieldOfExpertise">
+                                    <img src="../images/pen.svg" width="15px" title="Edit"/>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 mb-3">
+                    <header class="card-header bg-white px-2 px-sm-3">
+                        <h5 class="m-0 d-inline-block">Work Experience</h5>
+                        <button class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience" title="Add Work Experience">
+                            +
+                        </button>
+                    </header>
+                    <div class="card-body clearfix px-2 px-sm-3">
+                        <div class="row">
+                           <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
+                                <img src="../images/company.svg" height="60px"/>
+                           </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
+                                    Edit
+                                </button>
+                                <h6>Front End developer</h6>
+                                <p class="mb-0">iDevWorks Technologies LTD . Full-time</p>
+                                <p class="mb-0 text-secondary">November 2019 - Present . 1 yr 6 mos</p>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-divider"></div>
+                        <div class="row">
+                            <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
+                                 <img src="../images/company.svg" height="60px"/>
+                            </div>
+                             <div class="col">
+                                 <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
+                                     Edit
+                                 </button>
+                                 <h6>Graphics Designer</h6>
+                                 <p class="mb-0">Fine Print & Manufacturing Ltd . Full-time</p>
+                                 <p class="mb-0 text-secondary">July 2015 - July 2016 . 1 yr</p>
+                             </div>
+                             
+                         </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row">
+                            <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
+                                 <img src="../images/company.svg" height="60px"/>
+                            </div>
+                             <div class="col">
+                                 <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
+                                     Edit
+                                 </button>
+                                 <h6>Wordpress developer</h6>
+                                <p class="mb-0">Commodots LTD . Full-time</p>
+                                <p class="mb-0 text-secondary">November 2017 - July 2018 . 6 mos</p>
+                             </div>
+                             
+                         </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 mb-3">
+                    <header class="card-header bg-white px-2 px-sm-3">
+                        <h5 class="m-0 d-inline-block">Qualifications</h5>
+                        <button class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#qualifications" title="Add Qualification">
+                            +
+                        </button>
+                    </header>
+                    <div class="card-body clearfix px-2 px-sm-3">
+                        <div class="row">
+                            <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
+                                <img src="../images/museum.svg" height="60px" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#qualifications">
+                                    Edit
+                                </button>
+                                <h6>University Of Lagos</h6>
+                                <p class="mb-0">Computer Engineering . Bachelor Degree </p>
+                                <p class="mb-0 text-secondary">2012 - 2017 </p>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="row">
+                            <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
+                                <img src="../images/museum.svg" height="60px" />
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#qualifications">
+                                    Edit
+                                </button>
+                                <h6>United Global Resources Ltd</h6>
+                                <p class="mb-0">Web Development . Certificate</p>
+                                <p class="mb-0 text-secondary">2017 - 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert bg-light text-orange" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    <h5 class="alert-heading">Error Heading!</h5>
+                    <div class="dropdown-divider"></div>
+                    <p>This action you just took is not allowed</p>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    
+    
+    
+    <!--Personal Information Modal -->
+    <div class="modal fade" id="personalInfo" tabindex="-1" role="dialog" aria-labelledby="personalInfo"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Personal Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+                            <input type="text" class="form-control mt-3" id="lastname" placeholder="Lastname">
+                            <input type="email" class="form-control mt-3" id="email" placeholder="Email">
+                            <input type="tel" class="form-control mt-3" id="tel" placeholder="Phone Number">
+                        </div>
+    
+                        <h6>Gender</h6>
+                        <div class="form-group p-2 rounded bg-white">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="male" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="female" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="female">Female</label>
+                            </div>
+                        </div>
+                        <h6>Address</h6>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" id="inputState">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCountry">Country</label>
+                                <input type="text" class="form-control" id="inputCountry">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary-blue">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Field of Expertise Modal -->
+    <div class="modal fade" id="fieldOfExpertise" tabindex="-1" role="dialog" aria-labelledby="fieldOfExpertise"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Field of Expertise</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group clearfix">
+                            <label for="fieldOfExpertise" class="h6 d-block">Field of Expertise</label>
+                            <select id="fieldOfExpertise" class="form-control w-50 float-left">
+                                <option>choose a Category</option>
+                                <option value="1">Engineering</option>
+                                <option value="1">IT and Computing</option>
+                                <option value="1">Music</option>
+                                <option value="1">Accounting</option>
+                            </select>
+
+                            <select id="fieldOfExpertise" class="form-control w-50 float-left">
+                                <option>Field of Expertise</option>
+                                <option value="1">Engineering</option>
+                                <option value="1">IT and Computing</option>
+                                <option value="1">Music</option>
+                                <option value="1">Accounting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ExpertiseExperience" class="h6">Years of Experience</label>
+                            <input type="number" class="form-control w-50" id="ExpertiseExperience">
+                        </div>
+
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkinthisField">
+                            <label class="custom-control-label" for="currentlyWorkinthisField">Currently Work in this Field</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary-blue">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Work Experience Modal -->
+    <div class="modal fade" id="workExperience" tabindex="-1" role="dialog" aria-labelledby="workExperience"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Work Experience</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fieldOfExperience" class="h6">Field of Experience</label>
+                            <select id="fieldOfExperience" class="form-control">
+                                <option>choose a field</option>
+                                <option value="1">Engineering</option>
+                                <option value="1">IT and Computing</option>
+                                <option value="1">Music</option>
+                                <option value="1">Accounting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jobTitle" class="h6">Job Title</label>
+                            <input type="text" class="form-control" id="jobTitle" placeholder="eg. Personal Assistant">
+                        </div>
+
+
+                        <div class="form-row">
+                            <label class="h6 col-12">Employment Type</label>
+                            <div class="col-md-6 mb-3">
+                                <select id="jobTitle" class="form-control">
+                                    <option>Employment type</option>
+                                    <option value="1">Freelance</option>
+                                    <option value="1">Company</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select id="jobTitle" class="form-control">
+                                    <option>Part-time / Full-time</option>
+                                    <option value="1">Part-time</option>
+                                    <option value="1">Full-time</option>
+                                </select>
+                            </div>
+                          </div>
+                        <div class="form-group">
+                            <label for="companyName" class="h6">Company Name</label>
+                            <input type="text" class="form-control" id="companyName">
+                        </div>
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkHere">
+                            <label class="custom-control-label" for="currentlyWorkHere">Currently Work Here</label>
+                        </div>
+
+                        <div class="form-row form-group">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip03">Start Date</label>
+                              <input type="text" class="form-control" id="validationTooltip03" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip04">End Date</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary-blue">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Qualifications Modal -->
+    <div class="modal fade" id="qualifications" tabindex="-1" role="dialog" aria-labelledby="qualifications"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Qualifications</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group">
+                            <label for="jobTitle" class="h6">School / Institution of Learning</label>
+                            <input type="text" class="form-control" id="jobTitle">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="h6 c">Qualification Type</label>
+                            <div class="mb-3">
+                                <select id="jobTitle" class="form-control">
+                                    <option>Type of Qualification</option>
+                                    <option value="1">Certificate</option>
+                                    <option value="1">Bachelor's Degree</option>
+                                    <option value="1">Master's Degree</option>
+                                    <option value="1">PHD Degree</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="course" class="h6">Course of Study</label>
+                            <input type="text" class="form-control" id="course" placeholder="eg Computer Engineering / Medicine">
+                        </div>
+
+                        <div class="form-row form-group">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip03">Start Year</label>
+                              <input type="text" class="form-control" id="validationTooltip03" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip04">End Year</label>
+                              <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary-blue">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <button style="position: fixed; bottom: 5px; right: 15px; width: 50px; height: 50px;"
+        class="fab btn bg-orange rounded-circle p-2 d-flex align-items-center justify-content-center d-md-none"
+        onclick="toggleMenu()">
+        <img src="../images/open-menu.svg" width="16px" />
+    </button>
+
+    <section class="d-none d-md-none pt-5" id="menu-overlay" 
+        style="z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed; top: 0; left: 0; height: 100vh; width: 100%;">
+        <ul class="d-block d-md-none list-unstyled card-body bg-light px-0 mb-0" style="width:90%; max-width: 17rem ; height: 90vh;">
+            <li>
+                <a href="./mentees.html"
+                    class="btn btn-block rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark sidebar-active py-3">
+                    <img src="../images/mentees.svg" class="mr-2" width="17px" />Mentees
+                </a>
+            </li>
+            <li>
+                <a class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3"
+                    href="mentorshipRequests.html">
+                    <img src="../images/requests.svg" class="mr-2" width="17px" />Mentorship Requests
+                    <span class="badge bg-orange ml-auto">5</span>
+                </a>
+            </li>
+            <li>
+                <a href="./appointments.html"
+                    class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/appointments.svg" class="mr-2" width="17px" />Appointments
+                    <span class="badge bg-orange ml-auto">4</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/settings.svg" class="mr-2" width="17px" />Account Settings
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/update-profile.svg" class="mr-2" width="17px" />Update Profile
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/code-of-conduct.svg" class="mr-2" width="17px" />Code of Conduct
+                </a>
+            </li>
+        </ul>
+
+        <button style="position: fixed; top: 5px; right: 5px; width: 50px; height: 50px;" 
+            class="fab btn bg-orange font-weight-bold rounded-circle p-2 d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+            X
+        </button>
+    </section>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/Popper.min.js"></script>
+    <script src="../js/Bootstrap4.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        function toggleMenu(){
+            if( $('#menu-overlay').hasClass('d-none')){
+                $('#menu-overlay').removeClass('d-none');
+            }else{
+                $('#menu-overlay').addClass('d-none');
+            }
+        }
+
+        $('.toast').toast(option)
+    </script>
+</body>
+</html>

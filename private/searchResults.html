@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/Bootstrap4.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Search Result Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-light d-flex align-items-center justify-content-center insideNavbar sticky-top px-2 px-sm-3">
+        <a class="navbar-brand text-light mr-auto" href="#">Nkuzi</a>
+
+        <ul class="d-inline-block list-unstyled text-light mb-0 mx-auto">
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0" 
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="Home">
+                <img src="../images/home.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="News Feeds">
+                <img src="../images/news-feeds.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
+            data-toggle="tooltip" data-placement="bottom" title="Groups">
+                <img src="../images/groups.svg" width="18px" />
+            </a>
+        </ul>
+        
+        <div class="dropdown d-inline-block ml-auto">
+            <a class="nav-item nav-link d-inline-block btn btn-light btn-sm bg-primary-blue border-0 px-0" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <sub  data-toggle="tooltip" data-placement="bottom" title="Notifications"><img src="../images/notifications.svg" width="16px"/></sub>
+                <sup class="badge bg-orange" style="font-size: .6rem; position: relative; right: 11px; top: -7px;">4</sup>
+            </a>
+        
+            <div class="dropdown-menu dropdown-menu-right notifications py-0 user-thumb border-0" aria-labelledby="dropdownMenuLink" style="width: 290px; height: 90vh;">
+                <header class="card-header bg-transparent border-0">
+                    <h4 class="m-0 text-secondary">Notifications</h4>
+                </header>
+                
+
+                <div>
+                    <a href="./mentorshipRequests.html" class="row no-gutters text-decoration-none">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                NO
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1  text-dark">
+                                <h6 class="card-title mb-1">Nathan Omomowo</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">1 day ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a href="./mentorshipRequests.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                BA
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Bobola Ajala</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">3 days ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a  href="./mentorshipRequests.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                HK
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Harry kingsley</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Requested for Mentorship</p>
+                                <p class="card-text"><small class="text-primary">5 days ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdown-divider my-0"></div>
+
+                <div>
+                    <a href="./appointments.html" class="row no-gutters text-decoration-none text-dark">
+                        <div class="col-3 p-1">
+                            <span style="width:55px; height:55px; font-size: 1.3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                SI
+                            </span>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-1">
+                                <h6 class="card-title mb-1">Shadrach Idowu</h6>
+                                <p class="card-text mb-0" style="font-size: .9rem;">Set An Appointment</p>
+                                <p class="card-text"><small class="text-primary">1 week ago</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="dropdown d-inline-block ml-lg-2">
+            <a class="nav-item nav-link d-inline-block btn btn-light bg-primary-blue border-0 p-1" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+                <span style="width:23px; height:23px; font-size: .5rem;"  data-toggle="tooltip" data-placement="bottom" title="Profile"
+                    class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                    DN
+                </span>
+            </a>
+        
+            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink" style="width: 290px;">
+                    <div class="card border-0">
+                        <div class="row no-gutters border-bottom pb-2">
+                            <div class="col-4">
+                                <div class="card-header py-2 h-100 bg-white border-0 text-center d-flex flex-column align-items-center justify-content-center">
+                                    <span style="width:50px; height:50px; font-size: 1.5rem;"
+                                        class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                        DN
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body d-flex flex-column align-items-center1 justify-content-center py-2 px-0 h-100 bg-white border-0 text-left">
+                                    <h6 class="card-title mb-0">Daniel Nwokocha </h6>
+                                    <a class="small text-primary">123 Mentees</a>
+
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-footer bg-white border-0 py-0">
+                                    <a href="./mentorProfilepage.html" class="btn btn-block btn-sm btn-primary-blue text-white font-weight-bold">View Profile</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <ul class="list-unstyled card-body bg-light px-0 mb-0">
+                            <li>
+                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                    <img src="../images/manage-account.svg" class="mr-2" width="17px"/>Manage Account
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
+                                    <img src="../images/help.svg" class="mr-2" width="17px"/>Help
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../login.html" class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                    <img src="../images/log-out.svg" class="mr-2" width="17px"/>Logout
+                                </a>
+                            </li>             
+                        </ul>
+                        
+                    </div>
+
+
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <section class="container-fluid pt-0 pt-md-4">
+        <div class="row">
+            <aside class="col-12 col-md-4 col-lg-3 px-0 h-100 mb-3 d-none d-md-block mt-4">
+                
+                <div class="card ml-auto px-3 py-2 bg-light" style="max-width: 17rem;">
+                    <form>
+                        <h5 class="font-weight-bold mb-3 text-secondary">Filter Search Results</h5>
+                        <section class="form-group" style="max-height: 200px; overflow-y: auto;">
+                            <h6>Category</h6>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">
+                                    <span class="small">Accounting</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Computer Science</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Engineering</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Music</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Programming</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Guidiance & Councelling</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Journalism</span>
+                                </label>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </section>
+                        
+    
+                        <section class="form-group">
+                            <h6>Cost</h6>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">
+                                    <span class="small">Free</span>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="small">Paid</span>
+                                </label>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </section>
+                        
+    
+    
+                        <section class="form-group">
+                            <h6>Star Rating</h6>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <small>and up</small>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <small>and up</small>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <small>and up</small>
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <small>and up</small>
+                                </label>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </section>
+                        
+    
+                        <section class="form-group">
+                            <h6>Years of Experience</h6>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">
+                                    <small>Above 5 Years</small>
+                                    
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <small>Above 4 Years</small>
+                                    
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    <small>Above 3 Years</small>
+                                    
+                                </label>
+                            </div>
+                        </section>
+                        
+                    </form>
+                </div>
+                
+            </aside>
+
+            <main class="col-12 col-md-8 mx-auto">
+                <header class="d-flex mt-3">
+                    <button style="width: 35px; height: 35px;"
+                        class="btn btn-secondary rounded-circle p-2 d-flex align-items-center justify-content-center d-md-none mr-3"
+                        onclick="toggleFilterOverlay()">
+                        <img src="../images/filter-1.svg" width="20px" />
+                    </button>
+                    <h5 class="text-secondary mb-3">Search Results For "Nathan"</h5>
+                </header>
+
+                <div class="card mb-3 border-0" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4">
+                            <div class="card-header h-100 bg-light text-center d-flex align-items-center justify-content-center py-4 border-0">
+                                <span style="width:70px; height:70px; font-size: 1.5rem;"
+                                    class="d-inline-flex align-items-center justify-content-center font-weight-light bg-primary-blue rounded-circle profile-text mb-1 user-thumb">
+                                    NO
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="d-inline-block card-title mb-1">
+                                    Nathan Omomowo
+                                    <sup class="badge badge-success font-weight-normal ml-2" style="font-size: .6rem;">Verified</sup>
+                                </h5>
+                                <p class="mb-2">Ikeja . Lagos . Nigeria</p> 
+                                
+                                <p class="mb-1">
+                                    <span class="card-text mb-1">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                    <span class="text-info ml-2">32 Mentees</span> 
+                                    <span class="text-info ml-2">4 Courses</span>
+                                </p>
+                                
+                                <p class="card-text">
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-sm btn-primary-blue" data-toggle="modal" data-target="#fieldOfExpertise">
+                                            Request Mentorship
+                                        </button>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline-secondary">View Profile</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3 border-0" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4">
+                            <div class="card-header h-100 bg-light text-center d-flex align-items-center justify-content-center py-4 border-0">
+                                <span style="width:70px; height:70px; font-size: 1.5rem;"
+                                    class="d-inline-flex align-items-center justify-content-center font-weight-light bg-primary-blue rounded-circle profile-text mb-1 user-thumb">
+                                    NA
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="d-inline-block card-title mb-1">
+                                    Nathan Abayomi
+                                    <sup class="badge bg-orange font-weight-normal" style="font-size: .6rem;">Not Verified</sup>
+                                </h5>
+                                <p class="mb-2">Ojuelegba . Lagos . Nigeria</p> 
+                                
+                                <p class="mb-1">
+                                    <span class="card-text mb-1">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+                                    <span class="text-info ml-2">17 Mentees</span> 
+                                    <span class="text-info ml-2">2 Courses</span>
+                                </p>
+                                
+                                <p class="card-text">
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-sm btn-primary-blue" data-toggle="modal" data-target="#fieldOfExpertise">
+                                            Request Mentorship
+                                        </button>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline-secondary">View Profile</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-0" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4">
+                            <div class="card-header h-100 bg-light text-center d-flex align-items-center justify-content-center py-4 border-0">
+                                <span style="width:70px; height:70px; font-size: 1.5rem;"
+                                    class="d-inline-flex align-items-center justify-content-center font-weight-light bg-primary-blue rounded-circle profile-text mb-1 user-thumb">
+                                    NP
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="d-inline-block card-title mb-1">
+                                    Nathan Popoola
+                                    <sup class="badge badge-success font-weight-normal ml-2" style="font-size: .6rem;">Verified</sup>
+                                </h5>
+                                <p class="mb-2">Festac . Lagos . Nigeria</p> 
+                                
+                                <p class="mb-1">
+                                    <span class="card-text mb-1">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </span>
+                                    <span class="text-info ml-2">47 Mentees</span> 
+                                    <span class="text-info ml-2">5 Courses</span>
+                                </p>
+                                
+                                <p class="card-text">
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-sm btn-primary-blue" data-toggle="modal" data-target="#fieldOfExpertise">
+                                            Request Mentorship
+                                        </button>
+                                    </div>
+                                    <button class="btn btn-sm btn-outline-secondary">View Profile</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+   
+    
+    
+
+
+
+
+
+
+    <div class="modal fade" id="fieldOfExpertise" tabindex="-1" role="dialog" aria-labelledby="fieldOfExpertise"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Course of Interest</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkinthisField">
+                            <label class="h6 custom-control-label" for="currentlyWorkinthisField">Business Administartion <span class="small badge bg-orange">Paid</span></label>
+                        </div>
+
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkinthisField">
+                            <label class="h6 custom-control-label" for="currentlyWorkinthisField">Drop Shipping <span class="small badge bg-orange">Paid</span></label>
+                        </div>
+
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkinthisField">
+                            <label class="h6 custom-control-label" for="currentlyWorkinthisField">Web Development <span class="small badge bg-primary-blue">Free</span></label>
+                        </div>
+
+                        <div class="form-group custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="currentlyWorkinthisField">
+                            <label class="h6 custom-control-label" for="currentlyWorkinthisField">Graphic Design <span class="small badge bg-orange">Paid</span></label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary-blue">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button style="position: fixed; bottom: 5px; right: 15px; width: 50px; height: 50px;"
+        class="fab btn bg-orange rounded-circle p-2 d-flex align-items-center justify-content-center d-md-none"
+        onclick="toggleMenu()">
+        <img src="../images/open-menu.svg" width="16px" />
+    </button>
+
+    <section class="d-none d-md-none pt-5" id="filter-overlay" 
+        style="z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed; top: 0; left: 0; height: 100vh; width: 100%; overflow-y: scroll;">
+        <div class="card px-3 py-2 bg-light" style="max-width: 17rem;">
+            <form>
+                <h5 class="font-weight-bold mb-3 text-secondary">Filter Search Results</h5>
+                <section class="form-group" style="max-height: 200px; overflow-y: auto;">
+                    <h6>Category</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">
+                            <span class="small">Accounting</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Computer Science</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Engineering</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Music</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Programming</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Guidiance & Councelling</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Journalism</span>
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </section>
+                
+
+                <section class="form-group">
+                    <h6>Cost</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">
+                            <span class="small">Free</span>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="small">Paid</span>
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </section>
+                
+
+
+                <section class="form-group">
+                    <h6>Star Rating</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <small>and up</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <small>and up</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <small>and up</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <small>and up</small>
+                        </label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </section>
+                
+
+                <section class="form-group">
+                    <h6>Years of Experience</h6>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">
+                            <small>Above 5 Years</small>
+                            
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <small>Above 4 Years</small>
+                            
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">
+                            <small>Above 3 Years</small>
+                            
+                        </label>
+                    </div>
+                </section>
+                
+            </form>
+        </div>
+
+        <button style="position: fixed; top: 5px; right: 5px; width: 50px; height: 50px;" 
+            class="fab btn btn-secondary font-weight-bold rounded-circle p-2 d-flex align-items-center justify-content-center" onclick="toggleFilterOverlay()">
+            X
+        </button>
+    </section>
+
+    <section class="d-none d-md-none pt-5" id="menu-overlay" 
+        style="z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed; top: 0; left: 0; height: 100vh; width: 100%;">
+        <ul class="d-block d-md-none list-unstyled card-body bg-light px-0 mb-0" style="width:90%; max-width: 17rem ; height: 90vh;">
+            <li>
+                <a href="./mentees.html"
+                    class="btn btn-block rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark sidebar-active py-3">
+                    <img src="../images/mentees.svg" class="mr-2" width="17px" />Mentees
+                </a>
+            </li>
+            <li>
+                <a class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3"
+                    href="mentorshipRequests.html">
+                    <img src="../images/requests.svg" class="mr-2" width="17px" />Mentorship Requests
+                    <span class="badge bg-orange ml-auto">5</span>
+                </a>
+            </li>
+            <li>
+                <a href="./appointments.html"
+                    class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/appointments.svg" class="mr-2" width="17px" />Appointments
+                    <span class="badge bg-orange ml-auto">4</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/settings.svg" class="mr-2" width="17px" />Account Settings
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/update-profile.svg" class="mr-2" width="17px" />Update Profile
+                </a>
+            </li>
+            <li>
+                <a
+                    class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark py-3">
+                    <img src="../images/code-of-conduct.svg" class="mr-2" width="17px" />Code of Conduct
+                </a>
+            </li>
+        </ul>
+
+        <button style="position: fixed; top: 5px; right: 5px; width: 50px; height: 50px;" 
+            class="fab btn bg-orange font-weight-bold rounded-circle p-2 d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+            X
+        </button>
+    </section>
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/Popper.min.js"></script>
+    <script src="../js/Bootstrap4.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        function toggleMenu(){
+            if( $('#menu-overlay').hasClass('d-none')){
+                $('#menu-overlay').removeClass('d-none');
+            }else{
+                $('#menu-overlay').addClass('d-none');
+            }
+        }
+
+        function toggleFilterOverlay(){
+            if( $('#filter-overlay').hasClass('d-none')){
+                $('#filter-overlay').removeClass('d-none');
+            }else{
+                $('#filter-overlay').addClass('d-none');
+            }
+        }
+    </script>
+</body>
+</html>

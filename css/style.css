@@ -1,0 +1,203 @@
+body{
+    /* background-color: rgb(253, 253, 253); */
+    background-color: #EFEFEF; 
+    font-size: .9rem;
+}
+textarea:hover,
+textarea:active, 
+textarea:focus, 
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+input::placeholder {
+    font-size: 1rem;
+}
+
+
+
+/* --------------------------------------------------- Homepage Styles ----------------------------------------------- */
+.insideNavbar{
+    background-color: #062f4f;
+}
+.topNavbar .nav-link{
+    border-bottom: 1.5px solid #F8F9FA !important;
+}
+.topNavbar .nav-link:hover{
+    border-bottom: 1.5px solid #062f4f !important;
+    font-weight: 500;
+}
+.banner {
+    background-image: 
+    linear-gradient(to right, rgba(30, 30, 31, 0.644), rgba(30, 30, 31, 0.233)),
+    url('../images/Nkuzi_Get a Mentor in Any Life Endeavour in Nigeria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 650px;
+}
+
+#becomeAMentor{
+    background-image: 
+    linear-gradient(to right, rgba(30, 30, 31, 0), rgba(239, 239, 239, 0.877)),
+    url('../images/Nkuzi_Life Coach in Nigeria-cropped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+}
+.overlay{
+    background-image: linear-gradient();
+}
+.categories{
+    position: relative;
+    bottom:80px;
+    background-color: #813772;
+}
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+#mentors-section{
+    position: relative;
+}
+.mentors-card{
+    max-width: 400px;
+}
+.card, .user-thumb{
+    -webkit-box-shadow: -1px 2px 3px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 3px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 3px -2px rgba(0,0,0,0.75);
+}
+.chevron-left{
+    left: -10px;
+    position: absolute;
+    top: 195px;
+}
+.chevron-right{
+    right: -10px;
+    position: absolute;
+    top: 195px;
+}
+.chevron-left, .chevron-right,.fab{
+    z-index: 1000;
+    -webkit-box-shadow: 2px 14px 12px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 14px 12px -13px rgba(0,0,0,0.75);
+    box-shadow: 2px 14px 12px -13px rgba(0,0,0,0.75);
+}
+.btn-purple{
+    background-color: #813772;
+    color: white;
+}
+.btn-purple:hover{
+    background-color: #4e2346;
+    color: white;
+}
+.bg-primary-blue{
+    background-color: #062f4f;
+    color: white;
+}
+.border-primary-blue{
+    border: 1.5px solid #062f4f;
+}
+.text-primary-blue{
+    color: #02223b;
+}
+.btn-primary-blue{
+    background-color: #062f4f;
+    color: whitesmoke;
+}
+.btn-primary-blue:hover{
+    background-color: #011f38;
+    color: whitesmoke;
+}
+.text-orange{
+    color: rgb(189, 45, 9);
+}
+.btn-orange{
+    color: rgb(211, 42, 0);
+    border: 1px solid rgb(211, 42, 0);
+    background-color: white;
+}
+.bg-orange,.btn-orange:hover{
+    background-color: rgb(189, 45, 9);
+    border: 1px solid rgb(189, 45, 9);
+    color: white;
+}
+.btn-outline-purple{
+    border: 1px solid #813772;
+    color:#813772;
+}
+.btn-outline-purple:hover{
+    background-color: #813772;
+    color: #fff;
+}
+
+
+
+.font-weight-bold{
+    font-weight: 600 !important;
+}
+.main{
+    margin-left: 400px;
+} 
+.navbar{
+    z-index: 1000;
+}
+.sidebar-active, .bg-secondary-blue{
+    background-color: #beceda !important;
+}
+.notifications{
+    position: absolute !important;
+    right: -30px;
+}
+.notifications > div:hover{
+    background-color: #02223b24;
+}
+.checked{
+    color: orange;
+}
+.profile-bg{
+    height: 187px;
+    background-color: #02223b24;
+}
+.dropdown a:hover{
+    text-decoration: none;
+    color: rgb(14, 14, 14)
+} 
+
+#pills-tab > .nav-item > .active{
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid #062f4f;
+}
+option:hover{
+    border: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #sidebar{
+        position: sticky;
+        top: 88px;
+        height: 90vh;
+    } 
+    #sidebar .card{
+        max-width: 17rem;
+        height: 83vh;
+    }
+    .navbar > ul > a > img{
+        width: 23px;
+    } 
+}
+  
