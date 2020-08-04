@@ -185,6 +185,26 @@ input::placeholder {
 option:hover{
     border: none;
 }
+.errorBox{
+    position: fixed;
+    bottom: -17px;
+}
+/* #menu-overlay{
+    z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed;top: 56px; left: -400;height: calc(100vh - 56px) ;width: 100%;transition: left 0.3s;
+} */
+#menu-overlay > ul{
+    max-width: 17rem ; 
+    height: calc(100vh - 56px) ;
+    left: -700;
+}
+
+#bottom-navigation{
+    background-color: #417faf;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    transition: bottom 0.3s;
+}
 
 @media only screen and (min-width: 768px) {
     #sidebar{

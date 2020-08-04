@@ -12,10 +12,17 @@
 <body>
 
     <nav class="navbar navbar-light d-flex align-items-center justify-content-center insideNavbar sticky-top px-2 px-sm-3">
-        <a class="navbar-brand text-light mr-auto" href="#">Nkuzi</a>
 
-        <ul class="d-inline-block list-unstyled text-light mb-0 mx-auto">
-            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0" 
+        <form class="d-flex my-0 mr-auto bg-transparent rounded">
+            <img src="../images/arrow-left.svg" class="d-none p-2" id="back-arrow" width="38px" onclick="closeSearchBox()">
+            <img src="../images/open-menu-1.svg" class="d-sm-none menu-button p-2" width="34px" onclick='toggleMenuOverlay()'/>
+            <a class="navbar-brand text-light ml-2" href="#" onclick="closeMenuOverlay()">Nkuzi</a>
+            <input class="form-control border-0 mr-2 d-none" style="min-width: 250px;" type="search" id="search-box" placeholder="Search" aria-label="Search">
+            <img src="../images/search-white.svg" width="22px" class="p-1" id="search-icon"  onclick="displaySearchBox()"/>
+        </form>
+
+        <ul class="d-none d-sm-inline-block list-unstyled text-light mb-0 mx-auto">
+            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
                 href="#"  data-toggle="tooltip" data-placement="bottom" title="Home">
                 <img src="../images/home.svg" width="18px" />
             </a>
@@ -23,24 +30,24 @@
                 href="#"  data-toggle="tooltip" data-placement="bottom" title="News Feeds">
                 <img src="../images/news-feeds.svg" width="18px" />
             </a>
-            <a class="nav-item nav-link d-inline-block mr-sm-5 p-2 btn btn-light bg-primary-blue border-0"
-            data-toggle="tooltip" data-placement="bottom" title="Groups">
+            <a class="nav-item nav-link d-inline-block p-2 btn btn-light bg-primary-blue border-0"
+                data-toggle="tooltip" data-placement="bottom" title="Groups">
                 <img src="../images/groups.svg" width="18px" />
             </a>
         </ul>
-        
-        <div class="dropdown d-inline-block ml-auto">
+
+        <div class="dropdown d-inline-block ml-auto" id="notification-dropdown">
             <a class="nav-item nav-link d-inline-block btn btn-light btn-sm bg-primary-blue border-0 px-0" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+            aria-haspopup="true" aria-expanded="false"  onclick="closeMenuOverlay()">
                 <sub  data-toggle="tooltip" data-placement="bottom" title="Notifications"><img src="../images/notifications.svg" width="16px"/></sub>
                 <sup class="badge bg-orange" style="font-size: .6rem; position: relative; right: 11px; top: -7px;">4</sup>
             </a>
-        
+
             <div class="dropdown-menu dropdown-menu-right notifications py-0 user-thumb border-0" aria-labelledby="dropdownMenuLink" style="width: 290px; height: 90vh;">
                 <header class="card-header bg-transparent border-0">
                     <h4 class="m-0 text-secondary">Notifications</h4>
                 </header>
-                
+
 
                 <div>
                     <a href="./mentorshipRequests.html" class="row no-gutters text-decoration-none">
@@ -121,75 +128,90 @@
             </div>
         </div>
 
-        <div class="dropdown d-inline-block ml-lg-2">
+        <div class="dropdown d-inline-block ml-lg-2" id="profile-dropdown">
             <a class="nav-item nav-link d-inline-block btn btn-light bg-primary-blue border-0 p-1" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+            aria-haspopup="true" aria-expanded="false" onclick="closeMenuOverlay()">
                 <span style="width:23px; height:23px; font-size: .5rem;"  data-toggle="tooltip" data-placement="bottom" title="Profile"
                     class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
                     DN
                 </span>
             </a>
-        
-            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink" style="width: 290px;">
-                    <div class="card border-0">
-                        <div class="row no-gutters border-bottom pb-2">
-                            <div class="col-4">
-                                <div class="card-header py-2 h-100 bg-white border-0 text-center d-flex flex-column align-items-center justify-content-center">
-                                    <span style="width:50px; height:50px; font-size: 1.5rem;"
-                                        class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
-                                        DN
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body d-flex flex-column align-items-center1 justify-content-center py-2 px-0 h-100 bg-white border-0 text-left">
-                                    <h6 class="card-title mb-0">Daniel Nwokocha </h6>
-                                    <a class="small text-primary">123 Mentees</a>
 
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card-footer bg-white border-0 py-0">
-                                    <a href="./mentorProfilepage.html" class="btn btn-block btn-sm btn-primary-blue text-white font-weight-bold">View Profile</a>
-                                </div>
-                               
+            <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink" style="width: 290px;">
+                <div class="card border-0">
+                    <div class="row no-gutters border-bottom pb-2">
+                        <div class="col-4">
+                            <div class="card-header py-2 h-100 bg-white border-0 text-center d-flex flex-column align-items-center justify-content-center">
+                                <span style="width:50px; height:50px; font-size: 1.5rem;"
+                                    class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
+                                    DN
+                                </span>
+
                             </div>
                         </div>
+                        <div class="col-8">
+                            <div class="card-body d-flex flex-column align-items-center1 justify-content-center py-2 px-0 h-100 bg-white border-0 text-left">
+                                <h6 class="card-title mb-0">Daniel Nwokocha </h6>
+                                <a class="small text-primary">123 Mentees</a>
 
-                        <ul class="list-unstyled card-body bg-light px-0 mb-0">
-                            <li>
-                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
-                                    <img src="../images/manage-account.svg" class="mr-2" width="17px"/>Manage Account
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
-                                    <img src="../images/help.svg" class="mr-2" width="17px"/>Help
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../login.html" class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
-                                    <img src="../images/log-out.svg" class="mr-2" width="17px"/>Logout
-                                </a>
-                            </li>             
-                        </ul>
-                        
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card-footer bg-white border-0 py-0">
+                                <a href="./mentorProfilepage.html" class="btn btn-block btn-sm btn-primary-blue text-white font-weight-bold">View Profile</a>
+                            </div>
+
+                        </div>
                     </div>
 
+                    <ul class="list-unstyled card-body bg-light px-0 mb-0">
+                        <li>
+                            <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/manage-account.svg" class="mr-2" width="17px"/>Manage Account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
+                                <img src="../images/help.svg" class="mr-2" width="17px"/>Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" class="btn btn-block btn-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
+                                <img src="../images/log-out.svg" class="mr-2" width="17px"/>Logout
+                            </a>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
         </div>
-        
+
+    </nav>
+
+    <nav class="navbar navbar-light d-flex align-items-center justify-content-center d-sm-none p-0" id="bottom-navigation">
+        <ul class="d-inline-block list-unstyled text-light mb-0 mx-auto">
+            <a class="nav-item nav-link d-inline-block mr-4 p-2 btn btn-light bg-transparent border-0"
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="Home">
+                <img src="../images/home.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block mr-4 p-2 btn btn-light bg-transparent border-0"
+                href="#"  data-toggle="tooltip" data-placement="bottom" title="News Feeds">
+                <img src="../images/news-feeds.svg" width="18px" />
+            </a>
+            <a class="nav-item nav-link d-inline-block p-2 btn btn-light bg-transparent border-0"
+                data-toggle="tooltip" data-placement="bottom" title="Groups">
+                <img src="../images/groups.svg" width="18px" />
+            </a>
+        </ul>
     </nav>
 
 
     <div class="container-fluid pt-md-4" style="z-index: 1;">
         <div class="row">
-            <aside class="col-12 col-md-4 col-lg-3 px-0 h-100 mb-3" id="sidebar">
+            <aside class="col-12 col-md-4 col-lg-3 px-0 h-100 mb-3"  onclick="closeSearchBox()" id="sidebar">
                 <div class="card bg-primary-blue text-light border-0 rounded-0 ml-md-auto">
                     <div class="card-header text-center py-4">
-                        <span style="width:90px; height:90px; font-size: 2.2rem;" 
+                        <span style="width:90px; height:90px; font-size: 2.2rem;"
                             class="d-inline-flex align-items-center justify-content-center font-weight-light text-primary-blue bg-light rounded-circle profile-text mb-1 user-thumb">
                             DN
                         </span>
@@ -197,10 +219,9 @@
                         <p class="card-text text-center" style="font-size: .9rem;">gurudanito001@gmail.com</p>
                     </div>
 
-
                     <ul class="d-none d-md-block list-unstyled card-body bg-light px-0 mb-0">
                         <li>
-                            <a  href="./mentees.html" 
+                            <a  href="./mentees.html"
                             class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark">
                                 <img src="../images/mentees.svg" class="mr-2" width="17px"/>Mentees
                             </a>
@@ -208,7 +229,7 @@
                         <li>
                             <a href="./mentorshipRequests.html" class="btn btn-block bg-light rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark " href="mentorshipRequests.html">
                                 <img src="../images/requests.svg" class="mr-2" width="17px"/>Mentorship Requests
-                                <span class="badge bg-orange ml-5">5</span>
+                                <span class="badge bg-orange ml-auto">5</span>
                             </a>
                         </li>
                         <li>
@@ -226,33 +247,32 @@
                             <a class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
                                 <img src="../images/update-profile.svg" class="mr-2" width="17px"/>Update Profile
                             </a>
-                        </li>   
+                        </li>
                         <li>
                             <a class="btn btn-block bg-light rounded-0 text-left d-flex align-items-center font-weight-bold text-dark">
                                 <img src="../images/code-of-conduct.svg" class="mr-2" width="17px"/>Code of Conduct
                             </a>
-                        </li>                  
+                        </li>
                     </ul>
                 </div>
             </aside>
 
-            <main class="col-12 col-md-8 mx-auto py-0">
+            <main class="col-12 col-md-8 mx-auto py-0"  onclick="closeSearchBox()">
                 <div class="card mb-3 border-0  mx-auto mx-md-0">
                     <header class="card-header mb-2 profile-bg px-2 px-sm-3">
-                        
-                        <h4 class="d-inline-block card-title mb-0" style="position: relative; top: 87px;">
-                            <span style="width:120px; height:120px; font-size: 3rem;" 
-                            class="d-inline-flex align-items-center justify-content-center font-weight-light bg-light text-primary-blue rounded-circle profile-text mb-1 user-thumb">DN
-                            </span><br>
-                            Daniel Nwokocha<sup class="badge badge-success font-weight-normal ml-2" style="font-size: .8rem;">Verified</sup>
-                            
-                        </h4>
-                        
-                        
                     </header>
-                    <div class="card-body row pt-5" style="position: relative; top: 10px;">
-                        <div class="col-md-8 px-2 px-sm-3">
-                            
+                    <div class="card-body row">
+                        <div class="col-md-8 px-2 px-sm-3" style="position: relative; bottom: 100px; margin-bottom: -100px;">
+
+
+                            <h4 class="d-inline-block card-title mb-2">
+                                <span style="width:120px; height:120px; font-size: 3rem;"
+                                class="d-inline-flex align-items-center justify-content-center font-weight-light bg-light text-primary-blue rounded-circle profile-text mb-3 user-thumb">DN
+                                </span><br>
+                                Daniel Nwokocha<sup class="badge badge-success font-weight-normal ml-2" style="font-size: .8rem;">Verified</sup>
+
+                            </h4>
+
                             <h5 class="card-title font-weight-light mb-2">Front End Developer at iDevWorks Technologies Ltd </h5>
                             <span>Ikeja . Lagos . Nigeria</span>
                             <p class="card-text mb-1">
@@ -261,13 +281,18 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
-                            
+
                                 <span href="#" class="text-info ml-2">123 Mentees .</span>
                                 <a href="#" class="text-info ml-2"> 5 Courses</a>
-                                
+
                             </p>
                         </div>
                         <div class="col-md-4">
+                            <div class="row mb-2">
+                                <button class="btn btn-sm btn-primary-blue mr-2">Accept</button>
+                                <button class="btn btn-sm btn-orange mr-2">Decline</button>
+                                <button class="btn btn-sm btn-outline-secondary">Hold</button>
+                            </div>
                             <div class="row mb-2">
                                 <div class="col-auto bg-light p-1 d-flex align-items-center">
                                      <img src="../images/company.svg" height="18px"/>
@@ -286,12 +311,12 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                         
+
+
+
                     </div>
                 </div>
-               
+
                 <div class="card border-0 mb-3">
                     <header class="card-header bg-white clearfix px-2 px-sm-3">
                         <h5 class="m-0 d-inline-block">Personal Information</h5>
@@ -324,7 +349,7 @@
                              +
                         </button>
                     </header>
-                    <div class="card-body clearfix px-3">
+                    <div class="card-body">
                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#fieldOfExpertise">
                             Edit
                         </button> -->
@@ -335,7 +360,7 @@
                                 <a class="btn btn-link btn-sm py-0 ml-auto ml-sm-0" data-toggle="modal" data-target="#fieldOfExpertise">
                                     <img src="../images/pen.svg" width="15px" title="Edit"/>
                                 </a>
-                                
+
                             </li>
                             <li class="card col-sm-auto d-inline-block p-2 text-center mb-1">
                                 <h6 class="mb-1">Mobile Development</h6>
@@ -372,7 +397,7 @@
                     <div class="card-body clearfix px-2 px-sm-3">
                         <div class="row">
                            <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
-                                <img src="../images/company.svg" height="60px"/>
+                                <img src="../images/company.svg" class="bg-light p-2" height="60px"/>
                            </div>
                             <div class="col">
                                 <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
@@ -387,7 +412,7 @@
                         <div class="dropdown-divider"></div>
                         <div class="row">
                             <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
-                                 <img src="../images/company.svg" height="60px"/>
+                                 <img src="../images/company.svg" class="bg-light p-2" height="60px"/>
                             </div>
                              <div class="col">
                                  <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
@@ -397,12 +422,12 @@
                                  <p class="mb-0">Fine Print & Manufacturing Ltd . Full-time</p>
                                  <p class="mb-0 text-secondary">July 2015 - July 2016 . 1 yr</p>
                              </div>
-                             
+
                          </div>
                         <div class="dropdown-divider"></div>
                         <div class="row">
                             <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
-                                 <img src="../images/company.svg" height="60px"/>
+                                 <img src="../images/company.svg" class="bg-light p-2" height="60px"/>
                             </div>
                              <div class="col">
                                  <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#workExperience">
@@ -412,7 +437,7 @@
                                 <p class="mb-0">Commodots LTD . Full-time</p>
                                 <p class="mb-0 text-secondary">November 2017 - July 2018 . 6 mos</p>
                              </div>
-                             
+
                          </div>
                     </div>
                 </div>
@@ -427,7 +452,7 @@
                     <div class="card-body clearfix px-2 px-sm-3">
                         <div class="row">
                             <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
-                                <img src="../images/museum.svg" height="60px" />
+                                <img src="../images/museum.svg" class="bg-light p-2" height="60px" />
                             </div>
                             <div class="col">
                                 <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#qualifications">
@@ -441,7 +466,7 @@
                         <div class="dropdown-divider"></div>
                         <div class="row">
                             <div class="col-sm-auto pr-0 d-flex align-items-center mb-2">
-                                <img src="../images/museum.svg" height="60px" />
+                                <img src="../images/museum.svg" class="bg-light p-2" height="60px" />
                             </div>
                             <div class="col">
                                 <button type="button" class="btn btn-sm btn-outline-secondary float-right" data-toggle="modal" data-target="#qualifications">
@@ -455,11 +480,11 @@
                     </div>
                 </div>
 
-                <div class="alert bg-light text-orange" role="alert">
+                <div class="alert bg-secondary-blue text-orange errorBox mx-auto" role="alert" style="width: 300px;">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
-                    <h5 class="alert-heading">Error Heading!</h5>
+                    <h6 class="alert-heading">Error Heading!</h6>
                     <div class="dropdown-divider"></div>
                     <p>This action you just took is not allowed</p>
                 </div>
@@ -468,9 +493,9 @@
         </div>
     </div>
 
-    
-    
-    
+
+
+
     <!--Personal Information Modal -->
     <div class="modal fade" id="personalInfo" tabindex="-1" role="dialog" aria-labelledby="personalInfo"
         aria-hidden="true">
@@ -490,7 +515,7 @@
                             <input type="email" class="form-control mt-3" id="email" placeholder="Email">
                             <input type="tel" class="form-control mt-3" id="tel" placeholder="Phone Number">
                         </div>
-    
+
                         <h6>Gender</h6>
                         <div class="form-group p-2 rounded bg-white">
                             <div class="custom-control custom-radio custom-control-inline">
@@ -715,15 +740,16 @@
 
 
 
-    <button style="position: fixed; bottom: 5px; right: 15px; width: 50px; height: 50px;"
+    <!-- <button style="position: fixed; bottom: 5px; right: 15px; width: 50px; height: 50px;"
         class="fab btn bg-orange rounded-circle p-2 d-flex align-items-center justify-content-center d-md-none"
-        onclick="toggleMenu()">
+        onclick="showHideSidebar()">
         <img src="../images/open-menu.svg" width="16px" />
-    </button>
+    </button> -->
 
-    <section class="d-none d-md-none pt-5" id="menu-overlay" 
-        style="z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed; top: 0; left: 0; height: 100vh; width: 100%;">
-        <ul class="d-block d-md-none list-unstyled card-body bg-light px-0 mb-0" style="width:90%; max-width: 17rem ; height: 90vh;">
+    <section class="d-none d-md-none" id="menu-overlay"
+    style="z-index: 3000; background-color: rgba(0, 0, 0, 0.424); position: fixed;top: 56px; left: -400; height: calc(100vh - 56px) ; width: 100%;transition: left 0.3s;
+    ">
+        <ul class="d-block d-md-none list-unstyled card-body bg-light p-0 mb-0">
             <li>
                 <a href="./mentees.html"
                     class="btn btn-block rounded-0 text-left mb-1 d-flex align-items-center font-weight-bold text-dark sidebar-active py-3">
@@ -764,10 +790,10 @@
             </li>
         </ul>
 
-        <button style="position: fixed; top: 5px; right: 5px; width: 50px; height: 50px;" 
-            class="fab btn bg-orange font-weight-bold rounded-circle p-2 d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+        <!-- <button style="position: fixed; top: 5px; right: 5px; width: 40px; height: 40px;"
+            class="fab btn bg-secondary-blue text-orange font-weight-bold rounded-circle p-2 d-flex align-items-center justify-content-center" onclick="toggle('#menu-overlay')">
             X
-        </button>
+        </button> -->
     </section>
 
     <script src="../js/jquery-3.1.1.min.js"></script>
@@ -777,15 +803,68 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
-        function toggleMenu(){
+        function toggleMenuOverlay(){
             if( $('#menu-overlay').hasClass('d-none')){
                 $('#menu-overlay').removeClass('d-none');
             }else{
                 $('#menu-overlay').addClass('d-none');
             }
         }
+        function closeMenuOverlay(){
+            if( $('#menu-overlay').hasClass('d-none') === false){
+                $('#menu-overlay').addClass('d-none');
+            }
+        }
 
-        $('.toast').toast(option)
+        function showHideSidebar (){
+            console.log("WOW");
+            console.log(document.getElementById('menu-overlay').style.left)
+            if(document.getElementById('menu-overlay').style.left == "-400"){
+                document.getElementById('menu-overlay').style.left = "0";
+            }else{
+                document.getElementById('menu-overlay').style.left = "-400";
+            }
+        }
+
+        function displaySearchBox(event){
+            $("#search-box").removeClass("d-none")
+            $("#search-icon").addClass("d-none")
+            if(window.innerWidth < 768){
+                $("#notification-dropdown").removeClass("d-inline-block")
+                $("#notification-dropdown").addClass("d-none")
+                $("#profile-dropdown").removeClass("d-inline-block")
+                $("#profile-dropdown").addClass("d-none")
+                $(".menu-button").addClass("d-none")
+                $(".navbar-brand").addClass("d-none")
+                $("#back-arrow").removeClass("d-none")
+                closeMenuOverlay()
+            }
+        }
+
+        function closeSearchBox(){
+            $("#search-box").addClass("d-none")
+            $("#search-icon").removeClass("d-none")
+
+            $("#notification-dropdown").removeClass("d-none")
+            $("#notification-dropdown").addClass("d-inline-block")
+            $("#profile-dropdown").removeClass("d-none")
+            $("#profile-dropdown").addClass("d-inline-block")
+            $(".menu-button").removeClass("d-none")
+            $(".navbar-brand").removeClass("d-none")
+            $("#back-arrow").addClass("d-none")
+        }
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("bottom-navigation").style.bottom = "0";
+            } else {
+                document.getElementById("bottom-navigation").style.bottom = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 </body>
 </html>
