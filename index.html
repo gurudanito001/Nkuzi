@@ -12,8 +12,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center topNavbar">
-        <a class="navbar-brand text-dark" href="#">
-            Nkuzi
+        <a class="navbar-brand" href="#">
+            <img src="./images/NZUKI-resized.png" height="50px" />
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav w-100">
                 <li class="nav-item ml-lg-4">
-                    <a class="nav-link text-dark px-0 py-1 mx-2" href="#">How it Works</a>
+                    <a class="nav-link px-0 py-1 mx-2" href="#">How it Works</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark px-0 py-1 mx-2" href="#">Mentoring For Teenagers</a>
+                    <a class="nav-link px-0 py-1 mx-2" href="#">Mentoring For Teenagers</a>
                 </li>
                 <li class="nav-item mr-lg-auto">
-                    <a class="nav-link text-dark px-0 py-1 mx-2" href="#">Career Interest Inventory</a>
+                    <a class="nav-link px-0 py-1 mx-2" href="#">Career Interest Inventory</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
                     <a class="btn btn-outline-purple btn-sm" href="register.html">Find a Mentor</a>
@@ -139,171 +139,210 @@
         </section>
 
 
-        <section class="container clearfix px-0" id="mentors-section">
+        <section class="container clearfix px-0 mt-5" id="mentors-section">
             <header class="row">
                 <h4 class="col-12">Featured Mentors</h4>
             </header>
-            <button class="btn btn-light rounded-circle float-left chevron-left">
-                <img src="images/chevron-left.svg" width="15px"/>
-            </button>
-            <button class="btn btn-light rounded-circle float-right chevron-right">
-                <img src="images/chevron-right.svg" width="15px"/>
-            </button>
-            <div class="d-flex flex-row scrolling-wrapper w-100 float-left">
-                
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-man-1.jpg" class=" card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Marsai Martins</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">133 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
+            
+            <div class="p-2" id="mentorsSliderWrapper">
+                <button class="btn btn-light rounded-circle float-left chevron-left">
+                    <img src="images/chevron-left.svg" width="15px"/>
+                </button>
+                <button class="btn btn-light rounded-circle float-right chevron-right">
+                    <img src="images/chevron-right.svg" width="15px"/>
+                </button>
+                <div class="d-flex flex-row scrolling-wrapper w-100 p-3 bg-white">
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-man-1.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Marsai Martins</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">133 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-lady-1.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Folashade Akintola</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">103 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-man-2.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Ikenna Ekwueme</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">245 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-lady-2.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Lois Anyawu</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">99 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-man-3.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">George Williams</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">93 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-man-4.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Peter Erebor</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">123 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
+                        <div class="card">
+                            <header class="card-header mentor-img-header" 
+                            style="background-image: url('./images/mentor-lady-3.jpg');">
+                            </header>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Tolulope Adebiyi</h6>
+                                <p class="card-text mb-0">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                                <p class="card-text"><small class="text-muted">139 Mentees</small></p>
+                                <button class="btn btn-sm btn-primary-blue">View Profile</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-lady-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Folashade Akintola</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">103 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-man-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Ikenna Ekwueme</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">245 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-lady-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Lois Anyawu</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">99 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-man-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">George Williams</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">93 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-man-4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Peter Erebor</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">123 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 px-2 mentors-card">
-                    <div class="card">
-                        <img src="images/mentor-lady-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Tolulope Adebiyi</h6>
-                            <p class="card-text mb-0">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </p>
-                            <p class="card-text"><small class="text-muted">139 Mentees</small></p>
-                            <button class="btn btn-sm btn-primary-blue">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
               
             
         </section>
 
-        <section class="container my-5" id="becomeAMentor">
-            <div class="row h-100">
-                <figcaption class="col-md-7 my-auto offset-md-5">
-                    <h2>Become a Mentor</h2>
-                    <p class="font-weight-normal" style="font-size: 1.1rem;">
-                        Are you an experienced and passionate expert, life coach, career counsellor or Industry/Business leader? <br>
-                        Sign up and start earning extra income with your free time.
-                    </p>
-                    <button class="btn btn-primary-blue btn-sm">
-                        Sign Up Now
-                    </button>
-                </figcaption>
+        <section class="container-fluid mt-5" id="becomeAMentor">
+            <div class="container mb-3">
+                <div class="row py-5">
+                    <article class="col-5 px-0 clearfix">
+                        <header>
+                            <h4 style="color: orange;">Become a Mentor</h4>
+                        </header>
+                        <p>
+                            <p class="h3 font-weight-normal text-white mb-3">
+                                Are you an experienced and passionate expert, life coach, career counsellor or Industry/Business leader
+                            </p>
+                            <img src="./images/Nkuzi_Medical Mentors in Nigeria.jpg" class="img img-fluid" width="60%"
+                            />
+                            <img src="./images/Nkuzi_Mentors in Medicine in Nigeria.jpg" class="img img-fluid" width="60%"
+                            style="position: absolute; left: 40%; bottom: 5%;"/>
+                        </p>
+                    </article>
+    
+                    <div class="col-6 offset-1 px-0">
+                        <figure>
+                            <img src="./images/Nkuzi_Life Coach in Nigeria.jpg" class="img img-fluid mb-4" />
+                            <h4 class="lead text-white mb-2">Sign up and start earning extra income with your free time.</h4>
+                            <button class="btn btn-secondary-orange">Sign Up Now</button>
+                        </figure>
+                        
+                    </div>
+                </div>
             </div>
+
+            <div class="container py-3 rounded mt-5">
+                <h4 style="color: orange;">Hire a Groomed Nkuzi </h4>
+                <div class="row">
+                    
+                    <p class="col-lg-7 mb-0">
+                        If you are seeking to hire a young talent in any area of interest, our platform is a right place to get a pool of talents who have been groomed by our experienced mentors. You can either make an urgent, one-off request or subscribe for a year at a hugely discounted rate. A year subscription allows you access to our pool of talents as many times as possible within a year.
+                    </p>
+                    <div class="col-lg-2">
+                        <button class="btn btn-secondary-orange">Get Started</button>
+                    </div>
+                </div>
+            </div> 
+           
         </section>
 
-        <section class="container py-3 rounded" style="background-color: rgb(175, 175, 175);">
-            <div class="row">
-                <h4 class="col-lg-3 px-0 mb-0 d-flex ">Hire a Groomed Nkuzi </h4>
-                <p class="col-lg-7 mb-0">
-                    If you are seeking to hire a young talent in any area of interest, our platform is a right place to get a pool of talents who have been groomed by our experienced mentors. You can either make an urgent, one-off request or subscribe for a year at a hugely discounted rate. A year subscription allows you access to our pool of talents as many times as possible within a year.
-                </p>
-                <div class="col-lg-2">
-                    <button class="btn btn-primary-blue btn-block">Get Started</button>
-                </div>
-                    
-            </div>
-            
-        </section> 
+        
     </main>
 
     <footer id="footer" class="d-flex align-items-center bg-secondary text-white px-5" style="height: 120px;">
