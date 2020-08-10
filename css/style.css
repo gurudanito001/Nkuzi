@@ -246,4 +246,10 @@ option:hover{
         width: 23px;
     } 
 }
+
+@media only screen and (max-width: 768px) {
+    .banner{
+        height: 550px !important;
+    }
+}
   
