@@ -48,12 +48,6 @@ input::placeholder {
 
 #becomeAMentor{
     background-color: #25015f;
-    /* background-image: 
-    linear-gradient(to right, rgba(30, 30, 31, 0), rgba(239, 239, 239, 0.877)),
-    url('../images/Nkuzi_Life Coach in Nigeria-cropped.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;*/
 }
 .overlay{
     background-image: linear-gradient();
@@ -119,14 +113,14 @@ input::placeholder {
     color: white;
 }
 .bg-primary-blue{
-    background-color: #10002a;
+    background-color: #25015f;
     color: white;
 }
 .border-primary-blue{
-    border: 1.5px solid #062f4f;
+    border: 1.5px solid #25015f;
 }
 .text-primary-blue{
-    color: #02223b;
+    color: #25015f;
 }
 .btn-primary-blue{
     background-color: #25015f;
@@ -134,7 +128,7 @@ input::placeholder {
 }
 .btn-primary-blue:hover{
     background-color: transparent;
-    color: #25015f;
+    color: #25015f !important;
     border: 1px solid #25015f;
 }
 .text-orange{
